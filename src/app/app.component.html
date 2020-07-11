@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<title>Proforma AleWare</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+.Title{
+  font-family: 'Kanit', sans-serif;
+  font-size: 150px;
+  color: #efb810;
+  /*
+    #ffee00
+    #efb810
+  */
+}
+
+.Subtitle{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+
+}
+
+.link{
+  font-family: 'Kanit', sans-serif;
+  font-size: 25px;
+  color: #efb810;
+  text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+  /*
+    #ffee00
+    #efb810
+  */
+}
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Inicio</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#services" class="w3-button w3-block">Servicio</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">Planes</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contacto</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel" align="center">
+    <h1 class="Title">AleWare</h1>
+    <p class="Subtitle">Soluciones Web</p>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <img src="https://hostproton.com/hosting/media/2018/12/Cambiar-el-dominio-de-su-instalaci%C3%B3n-de-WordPress-desde-la-base-de-datos.jpg" style="width:100%">
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container" id="services">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge">Servicios Ofrecidos</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>Certificado Digital</h3>
+      <p>Empresa certificada para confirmar su identidad digital en Internet SSL.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>Almacenamiento</h3>
+      <p>Garantizamos seguridad y accesibilidad a su información.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>Cuentas</h3>
+      <p>Servicio de Login y Gestión de cuentas para gestionar sus usuarios.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Subdominios</h3>
+      <p>Contamos con subdominios para toda la ramificación de su empresa.</p>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+      <h3>Planes Elegibles</h3>
+      <p>Dominio ideal para su empresa:</p>
+      <p class="link">www.designlopment.ec</p>
+      <p>Recomendamos el plan "Premium" que se adapta a todos sus requerimientos.</p>
+    </div>
+
+    <!-------  COMPONENTE ---------->
+    <mi-componente></mi-componente>
+
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contáctanos</span>
+  </div>
+
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Nombre</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Correo</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Asunto</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Mensaje</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+  </form>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Todos los Derechos Reservados</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Inicio</a>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+
+</body>
+</html>
